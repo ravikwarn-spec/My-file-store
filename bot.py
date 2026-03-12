@@ -23,13 +23,13 @@ class Bot(Client):
                 "root": "plugins"
             },
             workers=workers,
-            bot_token=token
+            bot_token= 8552960351:AAETO1N8-Q53PvUDrOoj1SeW4Tqkh9hLqi8
         )
         self.LOGGER = LOGGER
         self.name = session
         self.db = db
         self.fsub = fsub
-        self.owner = OWNER_ID
+        self.owner = 8637241169
         self.fsub_dict = {}
         self.admins = admins + [OWNER_ID] if OWNER_ID not in admins else admins
         self.messages = messages
@@ -38,7 +38,7 @@ class Bot(Client):
         self.req_fsub = {}
         self.disable_btn = disable_btn
         self.reply_text = messages.get('REPLY', 'Do not send any useless message in the bot.')
-        self.mongodb = MongoDB(db_uri, db_name)
+        self.mongodb = mongodb+srv://rolexforbuisness_db_user:<db_password>@cluster0.aku9tmu.mongodb.net/?appName=Cluster0
         self.req_channels = []
         self.db_channels = {}  # Initialize DB channels dictionary
         self.primary_db_channel = db  # Set initial primary DB channel
